@@ -1,11 +1,15 @@
-<div class="container-fluid">
+
   <nav class="navbar navbar-expand-sm navbar-dark  mb-4 myDash">
     <a class="" href="#">
       <img src="assets/logo.png" alt="" class="img-fluid" >
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation" (click)="toggleButton()">
+      <!--<span class="navbar-toggler-icon myIcon"></span>-->
+      <div class="loader"  *ngIf="btnClick" data-toggle="collapse" data-target="#navbarCollapse"></div>
+      <div class="loader1" *ngIf="!btnClick" data-toggle="collapse" data-target="#navbarCollapse"></div>
+    </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
 
@@ -46,4 +50,4 @@
     </div>
   </nav>
 
-</div>
+
