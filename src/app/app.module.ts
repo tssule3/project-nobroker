@@ -13,6 +13,7 @@ import { RightBoxComponent } from './right-box/right-box.component';
 import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     LeftBoxComponent,
     RightBoxComponent,
     DashboardComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    MyNavBarComponent
   ],
   imports: [
     BrowserModule,
