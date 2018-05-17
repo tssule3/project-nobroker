@@ -15,7 +15,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +30,7 @@ import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [ServicesService],
   bootstrap: [AppComponent]
