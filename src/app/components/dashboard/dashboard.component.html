@@ -1,7 +1,7 @@
 
   <nav class="navbar navbar-expand-sm navbar-dark  mb-4 myDash">
     <a class="" routerLink="">
-      <img src="assets/logo.png" alt="" class="img-fluid" (click)="toggleHide()">
+      <img src="assets/logo.png" alt="" class="img-fluid" (click)="changeSearchProperty()">
     </a>
     <div class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarCollapse" aria-controls="navbarCollapse"
@@ -50,6 +50,8 @@
     </div>
   </nav>
 <div class="container">
-  <app-search-prop [showEverything]="showEverything" (changeShow)="showHideSearch($event)"></app-search-prop>
+  <app-search [showSearchComponent]="showSearchFromDash"
+  (informDash)="getInfoFromSearch($event)" [hideSearchBtn]="makeBtnHidden"
+              (informDashAboutBtn)="methodToToggleBtnHidden($event)"></app-search>
 </div>
 

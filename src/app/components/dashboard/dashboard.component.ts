@@ -6,22 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  showEverything;
+  makeBtnHidden = true;
+  showSearchFromDash = true;
   btnClick = false;
   constructor() { }
 
   ngOnInit() {
-   this.showEverything = true;
   }
   toggleButton() {
     this.btnClick = !this.btnClick;
   }
-  showHideSearch(data) {
-    
-    this.showEverything = data;
+  getInfoFromSearch(data) {
+      this.showSearchFromDash = data;
   }
-  toggleHide() {
-    this.showEverything = true;
+  changeSearchProperty() {
+    this.showSearchFromDash = true;
+    this.makeBtnHidden = true;
   }
-
+  methodToToggleBtnHidden(data) {
+    this.makeBtnHidden = data;
+  }
 }
