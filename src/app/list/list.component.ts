@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
+  isLoggedIn = false;
 photosArray;
 minVal = 0;
 min = 0;
@@ -30,6 +31,12 @@ myCaret = true;
         'img4': 'assets/33.jpg', 'propName' : '1 RK KOTHRUD', 'propLocation' : 'Anand Park',
         'propArea' : '220', 'propDeposit' : '14000', 'propRent' : '5500', 'propFurnishing' : 'Full', 'propAge' : '10',
         'propTennants' : 'Family', 'propReadyToMove' : 'YES'}];
+  }
+
+  showOwnerInfo() {
+      if (this.isLoggedIn === false) {
+
+      }
   }
 
 }

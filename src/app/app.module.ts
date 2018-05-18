@@ -14,7 +14,14 @@ import {FormsModule} from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
-
+import {RouterModule, Routes} from '@angular/router';
+import { ShowOwnerComponent } from './components/show-owner/show-owner.component';
+import { SearchPropComponent } from './components/search-prop/search-prop.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+const myRoute: Routes = [
+  {path: 'show', component: ShowOwnerComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +32,17 @@ import { MyNavBarComponent } from './my-nav-bar/my-nav-bar.component';
     RightBoxComponent,
     DashboardComponent,
     ImageCarouselComponent,
-    MyNavBarComponent
+    MyNavBarComponent,
+    ShowOwnerComponent,
+    SearchPropComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [ServicesService],
   bootstrap: [AppComponent]
