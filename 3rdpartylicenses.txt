@@ -122,7 +122,7 @@ MIT
 MIT
 MIT
 
-@angular/common@5.2.10
+@angular/router@5.2.10
 MIT
 MIT
 
@@ -130,7 +130,7 @@ MIT
 MIT
 MIT
 
-@angular/router@5.2.10
+@angular/common@5.2.10
 MIT
 MIT
 
