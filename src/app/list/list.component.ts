@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  isLoggedIn = false;
+
 photosArray;
-minVal = 0;
-min = 0;
-max = 0;
 myCaret = true;
   constructor() { }
 
