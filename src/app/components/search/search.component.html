@@ -9,7 +9,7 @@
   <div class="row customRow">
     <div class="col-md-2">
       <div class="one"><br>
-        <select class="customBtn" (change)="setCity($event)">
+        <select class=" customBtn" (change)="setCity($event)">
           <option value="city">Select City</option>
           <option value="pune">Pune</option>
           <option value="mumbai">Mumbai</option>
@@ -20,7 +20,7 @@
     </div>
     <div class="col-md-2">
       <div class="two"><br>
-        <select class="customBtn">
+        <select class=" customBtn">
           <option value="bhk">Any BHK</option>
           <option value="one">1RK</option>
           <option value="two">1BHK</option>
@@ -40,7 +40,7 @@
     <div class="col-md-2">
       <div class="four"><br>
 
-        <button routerLink="/{{city}}" class="btn btn-primary customBtn" [disabled]="hideSearchBtn" data-toggle="dropdown"
+        <button routerLink="/{{city}}" class="btn btn-warning customBtn2" [disabled]="hideSearchBtn" data-toggle="dropdown"
                 (click)="hideSearchComponent()">
           Search <i class="fa fa-search"></i>
         </button>
@@ -52,7 +52,7 @@
 
 </div><br>
 <div class="container customRow" *ngIf="showSearchComponent">
-  <h5 class="text-center">Are You A House Owner?</h5>
-  <button class="btn btn-secondary customBtn1">Post Your Free Ad</button>
+  <h5 class="text-center customFooter">Are You A House Owner?</h5>
+  <button class="btn btn-danger customBtn1">Post Your Free Ad</button>
   <br> <br>
 </div>

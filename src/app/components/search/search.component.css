@@ -1,5 +1,6 @@
 .container{
   color: gray;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.31);
 }
 .one{
 
@@ -23,26 +24,54 @@
 
 }
 .customBtn{
+  color: gray;
   /*background-color: rgba(211, 211, 211, 0);*/
+  border-radius: 2px;
+  background-color: rgba(211, 211, 211, 0);
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 35px;
 }
 .customBtn:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
 .customBtn1{
+
+  /*background-color: rgba(211, 211, 211, 0);*/
+  border-radius: 2px;
+
   width: 50%;
-  margin-left: 30%;
+  margin-left: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 35px;
 }
 
 .customBtn1:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
 .customRow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
 
+}
+.customRow:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.customBtn2{
+  border-radius: 2px;
+
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 35px;
+}
+.customBtn2:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.customFooter{
+  color: rgba(0, 0, 0, 0.51);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.31);
 }
