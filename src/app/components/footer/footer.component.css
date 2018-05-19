@@ -1,0 +1,48 @@
+.customFooter{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.myPara{
+  font-size: 15px;
+}
+.customBtn{
+  background-color: rgba(211, 211, 211, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*tooltip*/
+.tool {
+  background-color: rgba(245, 255, 0, 0);
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tool .tooltext {
+  visibility: hidden;
+  width: 280px;
+  background-color: rgb(202, 211, 191);
+  color: #000000;
+  text-align: center;
+  border-radius: 12px;
+  padding: 5px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tool:hover .tooltext {
+  visibility: visible;
+}

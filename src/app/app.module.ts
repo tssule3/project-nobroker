@@ -12,6 +12,7 @@ import {PuneComponent} from './components/pune/pune.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import { DelhiComponent } from './components/delhi/delhi.component';
+import { FooterComponent } from './components/footer/footer.component';
 const myRoute: Routes = [
   {path: 'dash', component: DashboardComponent},
   {path: 'mumbai', component: MumbaiComponent},
@@ -32,7 +33,8 @@ const myRoute: Routes = [
     LoginComponent,
     SignupComponent,
     SearchComponent,
-    DelhiComponent
+    DelhiComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
